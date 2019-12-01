@@ -1,0 +1,7 @@
+import sys
+
+myList = list()
+for line in sys.stdin:
+    myList.extend((line.rstrip('\n')).split())
+mySet = set(myList)
+print(len(mySet))
